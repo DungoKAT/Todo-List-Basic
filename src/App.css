@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e3e9ff;
+}
+
+.container {
+    margin: 8rem auto;
+    width: 90vw;
+    max-width: 40rem;
+}
+
+.todo-form {
+    position: relative;
+    padding: 30px;
+    background-color: #af7eeb;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: center;
+    color: white;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+.text-input {
+    margin-right: 10px;
+    margin-bottom: 30px;
+    padding: 0.25rem 1rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    flex: 1 0 auto;
+}
+
+.submit-button {
+    position: absolute;
+    bottom: -1.7rem;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #af7eeb;
+    border: 5px solid #e3e9ff;
+    border-radius: 30px;
+    color: #fff;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.submit-button:hover {
+    color: #2a0d4e;
+    background-color: #beccff;
+    transform: scale(1.08);
+}
+
+.todo-list {
+    margin-top: 40px;
+}
+
+.list-item {
+    margin-top: 10px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    transition: 0.2s;
+}
+
+.list-item:hover {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+.title {
+    margin-right: 30px;
+    font-size: 1.5rem;
+    color: black;
+    background-color: transparent;
+    border: none;
+    flex: 1 0 auto;
+}
+
+.edit-input {
+    border-bottom: 2px solid black;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.button-container button {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: transparent;
+    border: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.button-container button:hover {
+    transform: scale(1.08);
+    color: #5a2699;
+}
+
+.edit-task-button {
+    margin-right: 10px;
+}
+
+.alert-list {
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.alert {
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: rgb(203, 255, 203);
+    border-left: 5px solid green;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+.error {
+    background-color: rgb(255, 210, 210);
+    border-left: 5px solid red;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+span {
+    display: flex;
+    margin-right: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.success span {
+    color: green;
+}
+
+.error span {
+    color: red;
+}
+
+.alert-text  {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
